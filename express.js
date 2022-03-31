@@ -28,13 +28,12 @@ const getRandomProd = () =>{
         })
     return prod
 }
-
 getRandomProd()
 
 app.get('/productos', (req, res)=>{
     res.json(productos)
 })
 
-app.get('/randomProducto', (req, res)=>{
+app.get('/productoRandom', (req, res)=>{
     res.json(getRandomProd())
 })
